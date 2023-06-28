@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "convert-trusted-gpg"
+version = "1.0.0"
+authors = [
+  { name="Gene Wood", email="gene_wood@cementhorizon.com" },
+]
+description = "Tool to convert apt trusted.gpg file into multiple trusted.gpg.d files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gene1wood/convert-trusted-gpg"
+"Bug Tracker" = "https://github.com/gene1wood/convert-trusted-gpg/issues"
+
+[project.scripts]
+convert-trusted-gpg = "convert_trusted_gpg:main"
